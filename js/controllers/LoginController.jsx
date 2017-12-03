@@ -4,6 +4,7 @@ import {render} from 'react-dom';
 import { createElement } from 'react';
 import Login from 'components/Login';
 import Dashboard from 'components/Dashboard';
+import AppComponent from 'components/AppComponent';
 import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
 import Auth from 'modules/Auth';
 
