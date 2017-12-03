@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-dev": "./node_modules/.bin/webpack -d"
+    "build-dev": "NODE_ENV='development' webpack",
+    "dev-server": "NODE_ENV='development' webpack-dev-server"
   },
   "author": "Rahul",
   "license": "ISC",
@@ -19,6 +20,8 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "webpack": "^3.9.1"
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5"
   }
 }

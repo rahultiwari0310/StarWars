@@ -16,18 +16,18 @@ class SearchTableComponent extends React.Component {
         super( props );
         this.state = {
             searchInput: '',    //Input entered in search field.
-            planetsResponse: {
+            planetsResponse: {  //Response of planets search. Initialised with results to check if response is present initially.
                 results: []
             },
-            selectedPlanet: {
+            selectedPlanet: {   //Selected planet item for detail view after search.
                 name: ''
             },
-            isValidating: false,
-            ajaxMaxed: false
+            isValidating: false,        //Shows pre loader if true.
+            ajaxMaxed: false        //Set to true if no. ajax is 15 in a minute.
         };
         this.data = {
-            ajaxTimeout: 0,
-            terrainColorMap: {
+            ajaxTimeout: 0,         //Will be used to store timeout id to clear timeout on next input.
+            terrainColorMap: {          //Color map for terrain colors.
                 grasslands: '#2C6805',
                 jungle: '#035C0F',
                 rainforests: '#03440C',
@@ -43,10 +43,12 @@ class SearchTableComponent extends React.Component {
                 ocean: '#3376F1',
                 mountains: '#51260A'
             },
-            ajaxCountInAMinute: 0,
-            isLuke: APP.Constants.USERS.LUKE === props.loggedInUser
+            ajaxCountInAMinute: 0,                                      //Ajax count in a minute
+            isLuke: APP.Constants.USERS.LUKE === props.loggedInUser     //Set to true if Luke. No max ajax limit for a minute.
         };
         this.performScopeBindings();
+
+        //Sets interval to reset ajax count after a minute.
         this.setIntervalForLuke();
 
      }
@@ -64,7 +66,7 @@ class SearchTableComponent extends React.Component {
     */
     render() {
         APP.Utils.log( 'SearchTableComponent.render()' );
-       const _lukeClass = this.state.ajaxMaxed ? 'search__legend' : 'hide';
+        const _lukeClass = this.state.ajaxMaxed ? 'search__legend' : 'hide';
         return (
             <div className='search' >
                 <div className='search__input__wrapper'>
@@ -79,6 +81,10 @@ class SearchTableComponent extends React.Component {
         );
     }
 
+    /**
+     * preloader view if isValidating = true.
+     * @returns {*}
+     */
     getPreloader() {
         APP.Utils.log( 'SearchTableComponent.getPreloader()' );
         if( this.state.isValidating ) {
@@ -109,11 +115,14 @@ class SearchTableComponent extends React.Component {
      */
     handleSearchInputChange( event ) {
         APP.Utils.log( 'SearchTableComponent.handleSearchInputChange()' );
+
+        //Reset search states to default.
         this.setState( { searchInput: event.currentTarget.value, selectedPlanet: { name: '' }, planetsResponse: { results: [] } } );
 
         //Send ajax if less than 15 or Luke
         if ( ( 15 > this.data.ajaxCountInAMinute ) || this.data.isLuke ) {
 
+            //If search input present make ajax
             if ( event.currentTarget.value ) {
                 this.handleAjax( APP.Utils.addGetParameters( APP.Constants.URLS.PLANETS, 'search=' + event.currentTarget.value ) );
             }
@@ -123,9 +132,14 @@ class SearchTableComponent extends React.Component {
         }
     }
 
+    /**
+     * handles ajax timeout
+     * @param url
+     */
     handleAjax( url ) {
         APP.Utils.log( 'SearchTableComponent.handleAjax()' );
 
+        //Clear previous timeout if any.
         clearTimeout( this.data.ajaxTimeout );
 
         const sendAjax = () => {
@@ -140,6 +154,7 @@ class SearchTableComponent extends React.Component {
     sendAjax( url ) {
         APP.Utils.log( 'SearchTableComponent.sendAjax()' );
 
+        //Shows pre loader
         this.setState(
             {
                 isValidating: true
@@ -152,6 +167,8 @@ class SearchTableComponent extends React.Component {
         ).done(
             ( response ) => {
                 this.data.ajaxCountInAMinute = this.data.ajaxCountInAMinute + 1;
+
+                //Shows planets table and hides pre loader
                 this.setState( { planetsResponse: response, isValidating: false } );
             }
         );
@@ -163,6 +180,7 @@ class SearchTableComponent extends React.Component {
     getSearchContent() {
         APP.Utils.log( 'SearchTableComponent.getSearchContent()' );
 
+        //If selected plant view present then detail view of planet returned.
         if ( this.state.selectedPlanet.name ) {
             return (
                 <PlanetDetailView
@@ -172,7 +190,7 @@ class SearchTableComponent extends React.Component {
                     terrainColorMap = { this.data.terrainColorMap }
                 />
             );
-        } else if ( 0 < this.state.planetsResponse.results.length && this.state.searchInput  ) {
+        } else if ( 0 < this.state.planetsResponse.results.length && this.state.searchInput  ) {        //If valid response present. Show planets search results.
             return (
                 <SearchTableView
                     data={ this.state.planetsResponse }
@@ -180,7 +198,7 @@ class SearchTableComponent extends React.Component {
                     handlePlanetClick={ this.handlePlanetClick }
                 />
             );
-        } else {
+        } else {    //Returns default message.
             if ( this.state.isValidating ) {
                 return null;
             } else {
@@ -192,7 +210,7 @@ class SearchTableComponent extends React.Component {
     }
 
     /**
-     * handlePlanetClick
+     * handleP planet item click to see detail planet view.
      */
     handlePlanetClick( selectedPlanet ) {
         APP.Utils.log( 'SearchTableComponent.handlePlanetClick()' );
@@ -200,7 +218,7 @@ class SearchTableComponent extends React.Component {
     }
 
     /**
-     * handleDetailBack
+     * handles click on back button of planet detail.
      */
     handleDetailBack() {
         APP.Utils.log( 'SearchTableComponent.handleDetailBack()' );

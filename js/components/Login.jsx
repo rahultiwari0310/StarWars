@@ -40,9 +40,9 @@ class Login extends React.Component {
         APP.Utils.log( 'Login.render()' );
         return (
             <div className='login'>
-                <h1 className='login__title' > Login to search planets</h1>
+                <h1 className='login__title' > Login using your name and birth year to search planets</h1>
                 <form className='form' onSubmit={ this.handleSubmit } method='post'>
-                    <span className={ this.state.isDirty ? 'error' : 'error hide' }> Invalid Username or password. </span>
+                    <span className={ this.state.isDirty && ! this.state.isValidating ? 'error' : 'error hide' }> Invalid Username or password. </span>
                     <div className='fields'>
                         <input type='text' id='username' value={ this.state.usernameEntered } name='username' placeholder='username' className='input' onChange={ this.onInputChange } />
                         { this.printPreLoader() }
@@ -83,7 +83,7 @@ class Login extends React.Component {
     }
 
     /**
-     * perform scope bindings.
+     * perform scope bindings
      */
     performScopeBindings() {
         APP.Utils.log( 'Login.performScopeBindings()' );
@@ -128,12 +128,11 @@ class Login extends React.Component {
                 //Matches for valid or invalid inputs.
                 switch ( this.validateFields( response ) ) {
 
-                    //Successful login
                     case APP.Constants.MATCH.VALID:
 
                         //code for login
                         this.setState( { isDirty: false } );
-                        this.props.renderDashboard( this.data.loggedInUser );
+                        this.props.loggedin( this.data.loggedInUser );
                         break;
 
                     //Invalid credentials
@@ -173,7 +172,6 @@ class Login extends React.Component {
      */
     checkPeopleList( people ) {
         APP.Utils.log( 'Login.checkPeopleList()' );
-
         for ( let i = 0; i < people.length; i = i + 1 ) {
             const item = people[ i ];
 
@@ -182,7 +180,6 @@ class Login extends React.Component {
                 this.data.loggedInUser = item.name;
                 return true;
             }
-
         }
         return false;
     }
@@ -192,6 +189,7 @@ class Login extends React.Component {
      */
     printPreLoader() {
         APP.Utils.log( 'Login.printPreLoader()' );
+
         if ( this.state.isValidating ) {
             return ( <PreLoaderView /> );
         } else {

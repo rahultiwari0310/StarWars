@@ -50,6 +50,7 @@ const PlanetDetailView = ( props ) => {
 
 };
 
+//Prints terrain legends.
 const printLegends = ( colorMap ) => {
     const result = [];
     for ( let key in colorMap ) {
@@ -63,6 +64,7 @@ const printLegends = ( colorMap ) => {
     return result;
 };
 
+//prints terrain views for planet item.
 const getTerrainViews = ( terrain, colorMap ) => {
     const result = [],
         terrainArray = terrain.split( ', ' );

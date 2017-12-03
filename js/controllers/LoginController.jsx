@@ -1,41 +1,42 @@
+import APP from 'modules/APP';
 import React from 'react';
 import {render} from 'react-dom';
-import { createElement } from 'React';
+import { createElement } from 'react';
 import Login from 'components/Login';
 import Dashboard from 'components/Dashboard';
 import AppComponent from 'components/AppComponent';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
+import Auth from 'modules/Auth';
 
 const LoginController = {
 
-    renderLogin( { match, location, history } ) {
+    //Starts the app. Renders login first by default.
+    renderLogin() {
 
-        return createElement( Login, { match, location, history } );
+        return (
+            <Router>
+                <div>
+                    <Route path={ APP.Constants.PAGE.DASHBOARD } render={ props => (
+                        Auth.isAuthenticated ? (
+                            <Dashboard handleLogout={ this.logOff } loggedInUser={ Auth.user }/>
+                        ) : (
+                            <Redirect to={ { pathname: APP.Constants.PAGE.HOME, state: { from: props.location } } }/>
+                        )
+                    ) }/>
+                     <Route path={ APP.Constants.PAGE.HOME } component={ AppComponent } />
+                </div>
+            </Router>
+        )
+            
     },
-
-    renderDashboard( { match, location, history } ) {
-
-        return createElement( Dashboard, { match, location, history } );
-    },
-
-    render() {
-
+    load() {
         render(
-            createElement( Router, null,
-                createElement( Switch, null,
-                    createElement( Route, {
-                        path: '/Star_wars',
-                        render: this.renderLogin.bind( this ),
-                        exact: true
-                    } ),
-                    createElement( Route, {
-                        path: '/Star_wars/dashboard',
-                        render: this.renderDashboard.bind( this ),
-                        exact: true
-                    } )
-                )
-            ),
+            this.renderLogin(),
             document.getElementById( 'app' ) );
+    },
+    logOff() {
+        Auth.signout();
+        window.location = APP.Constants.PAGE.HOME
     }
 };
 

@@ -53,7 +53,7 @@ class Dashboard extends React.Component {
      }
 
     /**
-     * print Dashboard Head Provides log out button and hello message.
+     * print Dashboard Head welcome message and logout option.
      */
     printDashboardHead() {
         APP.Utils.log( 'Dashboard.printDashboardHead()' );

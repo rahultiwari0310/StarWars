@@ -12,7 +12,9 @@ const APP = {
 };
 
 const init = () => {
-    LoginController.renderLogin();
+
+    //Load login controller.
+    LoginController.load();
 };
 
 $( document ).ready( init );

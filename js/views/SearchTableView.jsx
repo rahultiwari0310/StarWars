@@ -2,12 +2,14 @@ import $ from 'jquery';
 import React from 'react';
 import APP from 'modules/APP';
 
+//Prints search table if results found.
 const SearchTableView = ( props ) => {
 
     return (
        <div className='search-content__table'>
            <p className='search__legend'> 1. Population bar uses logarithmic normalisations to manage population graph width. 100% population represents population of Coruscant planet.</p>
            <p className='search__legend'> 2. population_graph_width = ( log planet_population/ log coruscant_planet_population )/1.3</p>
+           <p className='search__legend'> 3. Click on any planet item to view detailed planet info.</p>
            <table className='search-results'>
                <colgroup>
                    <col width='20%'/>
@@ -33,6 +35,7 @@ const SearchTableView = ( props ) => {
 
 };
 
+//Prints navigation buttons next and back if more results.
 const printNavButtons = ( props ) => {
 
     const result = [];
@@ -50,6 +53,8 @@ const printNavButtons = ( props ) => {
     );
 };
 
+
+//Prints single table row item.
 const printTableRows = ( props ) => {
 
     const result = [],
@@ -73,6 +78,7 @@ const printTableRows = ( props ) => {
 
 };
 
+//Creates population bar view if population type is number.
 const getPopulationView = ( population ) => {
     return(
         <p className='planet__population'>
@@ -82,12 +88,14 @@ const getPopulationView = ( population ) => {
     );
 };
 
+//Return population bar if population type is number
 const getPopulationBar = ( population ) => {
     const _population = parseInt( population );
     if ( isNaN( _population ) ) {
         return null;
     } else {
-        const _scale = ( Math.log10( _population )/Math.log10( APP.Constants.MAX_POPULATION ) ),
+
+        const _scale = ( Math.log10( _population )/Math.log10( APP.Constants.MAX_POPULATION ) ),    //Normalised scale with base of log10.
             _style = {
                 transform: 1 <= _scale ? 'scaleX( 1 )': 'scaleX( ' + ( _scale/1.3 ).toFixed( 3 ) + ' )'
             };

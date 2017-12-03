@@ -2,7 +2,8 @@ import APP from 'modules/APP';
 import React from 'react';
 import Login from 'components/Login';
 import Dashboard from 'components/Dashboard';
-import { Switch } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
+import Auth from 'modules/Auth';
 
 class AppComponent extends React.Component {
 
@@ -14,6 +15,10 @@ class AppComponent extends React.Component {
      constructor( props ) {
         APP.Utils.log( 'AppComponent.constructor()' );
         super( props );
+        this.state = {
+            redirectToReferrer: false
+        };
+        this.loggedin = this.loggedin.bind( this );
      }
 
    /**
@@ -21,23 +26,24 @@ class AppComponent extends React.Component {
     */
     render() {
         APP.Utils.log( 'AppComponent.render()' );
+        const { from } = this.props.location.state || { from: { pathname: APP.Constants.PAGE.DASHBOARD } };
+        const { redirectToReferrer } = this.state;
+        if ( redirectToReferrer ) {
+            return (
+              <Redirect to={from}/>
+            )
+          }
         return this.renderLogin();
     }
 
     renderLogin() {
         APP.Utils.log( 'AppComponent.renderLogin()' );
-        return <Login renderDashboard={ ( loggedInUser ) => { this.renderDashboard( loggedInUser ); } }/>;
+        return <Login loggedin={ this.loggedin } />;
     }
 
-    renderDashboard( loggedInUser ) {
-        APP.Utils.log( 'AppComponent.renderDashboard()' );
-        const _props = {
-            loggedInUser: loggedInUser,
-            handleLogout: () => {
-                this.renderLogin();
-            }
-        };
-        return <Dashboard { ..._props } />;
+    loggedin( user ) {
+        Auth.authenticate( user );
+        this.setState( { redirectToReferrer: true } );
     }
 }
 
