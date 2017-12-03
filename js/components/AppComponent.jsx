@@ -1,7 +1,6 @@
 import APP from 'modules/APP';
 import React from 'react';
 import Login from 'components/Login';
-import Dashboard from 'components/Dashboard';
 import { Redirect } from 'react-router-dom';
 import Auth from 'modules/Auth';
 
