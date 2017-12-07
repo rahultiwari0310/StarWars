@@ -1,8 +1,8 @@
 const Constants = {
     DEBUG_MODE: false,       //Debug mode true allows logs to print on console.
     PAGE: {
-        HOME: '/starwars.github.io',          //Home URL
-        DASHBOARD: '/starwars.github.io/starwars'  //Dashboard URL
+        HOME: '/StarWars',          //Home URL
+        DASHBOARD: '/StarWars/dashboard'  //Dashboard URL
     },
     URLS: {
         PEOPLE: 'https://swapi.co/api/people',  //Swapi API people URL

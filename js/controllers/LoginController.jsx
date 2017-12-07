@@ -23,7 +23,10 @@ const LoginController = {
                             <Redirect to={ { pathname: APP.Constants.PAGE.HOME, state: { from: props.location } } }/>
                         )
                     ) }/>
-                     <Route path={ APP.Constants.PAGE.HOME } component={ AppComponent } />
+
+                     <Route path={ APP.Constants.PAGE.HOME }
+                           component = { AppComponent } exact
+                     />
                 </div>
             </Router>
         )
@@ -43,3 +46,4 @@ const LoginController = {
 export default LoginController;
 
 
+// render={ props => ( ! Auth.isAuthenticated ? ( <AppComponent { ...props } /> ) : null ) }

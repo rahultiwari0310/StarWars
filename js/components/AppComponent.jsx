@@ -27,11 +27,11 @@ class AppComponent extends React.Component {
         APP.Utils.log( 'AppComponent.render()' );
         const { from } = this.props.location.state || { from: { pathname: APP.Constants.PAGE.DASHBOARD } };
         const { redirectToReferrer } = this.state;
+
         if ( redirectToReferrer ) {
-            return (
-              <Redirect to={from}/>
-            )
-          }
+            return ( <Redirect to={from}/> );
+        } else
+
         return this.renderLogin();
     }
 
@@ -41,8 +41,13 @@ class AppComponent extends React.Component {
     }
 
     loggedin( user ) {
+        APP.Utils.log( 'AppComponent.loggedin()' );
         Auth.authenticate( user );
         this.setState( { redirectToReferrer: true } );
+    }
+
+    componentWillUnmount() {
+        APP.Utils.log( 'AppComponent.renderLogin()' );
     }
 }
 

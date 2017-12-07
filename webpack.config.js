@@ -18,6 +18,7 @@ var config = {
         path: BUILD_DIR,
         filename: 'main.js'
     },
+    devtool: 'source-map',
     module: {
         loaders : [
             {

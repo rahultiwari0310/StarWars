@@ -60,7 +60,7 @@
     /******/ 	__webpack_require__.p = "";
     /******/
     /******/ 	// __webpack_hash__
-    /******/ 	__webpack_require__.h = "2f66905d12472c8dc3e4";
+    /******/ 	__webpack_require__.h = "7d83b0cb14698465db5a";
     /******/
     /******/ 	// __webpack_chunkname__
     /******/ 	__webpack_require__.cn = "main";
@@ -4097,7 +4097,7 @@
             DEBUG_MODE: false, //Debug mode true allows logs to print on console.
             PAGE: {
                 HOME: '/StarWars', //Home URL
-                DASHBOARD: '/StarWars/starwars' //Dashboard URL
+                DASHBOARD: '/StarWars/dashboard' //Dashboard URL
             },
             URLS: {
                 PEOPLE: 'https://swapi.co/api/people', //Swapi API people URL
@@ -14336,7 +14336,9 @@
                         _react2.default.createElement(_reactRouterDom.Route, { path: _APP2.default.Constants.PAGE.DASHBOARD, render: function render(props) {
                             return _Auth2.default.isAuthenticated ? _react2.default.createElement(_Dashboard2.default, { handleLogout: _this.logOff, loggedInUser: _Auth2.default.user }) : _react2.default.createElement(_reactRouterDom.Redirect, { to: { pathname: _APP2.default.Constants.PAGE.HOME, state: { from: props.location } } });
                         } }),
-                        _react2.default.createElement(_reactRouterDom.Route, { path: _APP2.default.Constants.PAGE.HOME, component: _AppComponent2.default })
+                        _react2.default.createElement(_reactRouterDom.Route, { path: _APP2.default.Constants.PAGE.HOME,
+                            component: _AppComponent2.default, exact: true
+                        })
                     )
                 );
             },
@@ -14350,6 +14352,8 @@
         };
 
         exports.default = LoginController;
+
+// render={ props => ( ! Auth.isAuthenticated ? ( <AppComponent { ...props } /> ) : null ) }
 
         /***/ }),
     /* 70 */
@@ -32644,10 +32648,10 @@
 
                     var redirectToReferrer = this.state.redirectToReferrer;
 
+
                     if (redirectToReferrer) {
                         return _react2.default.createElement(_reactRouterDom.Redirect, { to: from });
-                    }
-                    return this.renderLogin();
+                    } else return this.renderLogin();
                 }
             }, {
                 key: 'renderLogin',
@@ -32658,8 +32662,14 @@
             }, {
                 key: 'loggedin',
                 value: function loggedin(user) {
+                    _APP2.default.Utils.log('AppComponent.loggedin()');
                     _Auth2.default.authenticate(user);
                     this.setState({ redirectToReferrer: true });
+                }
+            }, {
+                key: 'componentWillUnmount',
+                value: function componentWillUnmount() {
+                    _APP2.default.Utils.log('AppComponent.renderLogin()');
                 }
             }]);
 
@@ -36316,3 +36326,4 @@
 
         /***/ })
     /******/ ]);
+//# sourceMappingURL=main.js.map
