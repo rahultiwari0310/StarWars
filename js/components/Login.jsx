@@ -68,13 +68,15 @@ class Login extends React.Component {
         if ( _field.id === APP.Constants.FIELDS.USERNAME ) {
             this.setState(
                 {
-                    usernameEntered: _field.value
+                    usernameEntered: _field.value,
+                    isDirty: false
                 }
             );
         } else {
             this.setState(
                 {
-                    passwordEntered: _field.value
+                    passwordEntered: _field.value,
+                    isDirty: false
                 }
             );
         }
@@ -95,7 +97,11 @@ class Login extends React.Component {
     handleSubmit( event ) {
         APP.Utils.log( 'Login.handleSubmit()' );
         event.preventDefault();
-        this.handleAjax( APP.Utils.addGetParameters( APP.Constants.URLS.PEOPLE, 'search=' + this.state.usernameEntered ) );
+        if ( this.state.usernameEntered && this.state.passwordEntered ) {
+            this.handleAjax( APP.Utils.addGetParameters( APP.Constants.URLS.PEOPLE, 'search=' + this.state.usernameEntered ) );
+        } else {
+            this.setState( { isDirty: true } );
+        }
     }
 
     /**
