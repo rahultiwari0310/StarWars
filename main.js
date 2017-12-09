@@ -60,7 +60,7 @@
     /******/ 	__webpack_require__.p = "";
     /******/
     /******/ 	// __webpack_hash__
-    /******/ 	__webpack_require__.h = "7d83b0cb14698465db5a";
+    /******/ 	__webpack_require__.h = "41c07879d770dccac354";
     /******/
     /******/ 	// __webpack_chunkname__
     /******/ 	__webpack_require__.cn = "main";
@@ -489,9 +489,9 @@
             value: true
         });
 
-        var _jquery = __webpack_require__(7);
+        var _jqueryMin = __webpack_require__(7);
 
-        var _jquery2 = _interopRequireDefault(_jquery);
+        var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
 
         var _Constants = __webpack_require__(26);
 
@@ -521,7 +521,7 @@
             _LoginController2.default.load();
         };
 
-        (0, _jquery2.default)(document).ready(init);
+        (0, _jqueryMin2.default)(document).ready(init);
 
         exports.default = APP;
 
@@ -4446,9 +4446,9 @@
 
         var _react2 = _interopRequireDefault(_react);
 
-        var _jquery = __webpack_require__(7);
+        var _jqueryMin = __webpack_require__(7);
 
-        var _jquery2 = _interopRequireDefault(_jquery);
+        var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
 
         var _PreLoaderView = __webpack_require__(34);
 
@@ -4555,11 +4555,13 @@
                     //Check if user name or password changed.
                     if (_field.id === _APP2.default.Constants.FIELDS.USERNAME) {
                         this.setState({
-                            usernameEntered: _field.value
+                            usernameEntered: _field.value,
+                            isDirty: false
                         });
                     } else {
                         this.setState({
-                            passwordEntered: _field.value
+                            passwordEntered: _field.value,
+                            isDirty: false
                         });
                     }
                 }
@@ -4583,7 +4585,11 @@
                 value: function handleSubmit(event) {
                     _APP2.default.Utils.log('Login.handleSubmit()');
                     event.preventDefault();
-                    this.handleAjax(_APP2.default.Utils.addGetParameters(_APP2.default.Constants.URLS.PEOPLE, 'search=' + this.state.usernameEntered));
+                    if (this.state.usernameEntered && this.state.passwordEntered) {
+                        this.handleAjax(_APP2.default.Utils.addGetParameters(_APP2.default.Constants.URLS.PEOPLE, 'search=' + this.state.usernameEntered));
+                    } else {
+                        this.setState({ isDirty: true });
+                    }
                 }
 
                 /**
@@ -14236,9 +14242,9 @@
 
         var _Constants2 = _interopRequireDefault(_Constants);
 
-        var _jquery = __webpack_require__(7);
+        var _jqueryMin = __webpack_require__(7);
 
-        var _jquery2 = _interopRequireDefault(_jquery);
+        var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
 
         function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -14263,7 +14269,7 @@
             /**
              * Ajax request utility.
              */
-            ajax: _jquery2.default.ajax,
+            ajax: _jqueryMin2.default.ajax,
 
             isUndefined: function isUndefined(value) {
                 return null === value || 'undefined' === typeof value || 'null' === value;
@@ -31898,7 +31904,9 @@
                 _this.performScopeBindings();
 
                 //Sets interval to reset ajax count after a minute.
-                _this.setIntervalForLuke();
+                if (!_this.data.isLuke) {
+                    _this.setIntervalForLuke();
+                }
 
                 return _this;
             }
@@ -32021,6 +32029,7 @@
 
                     var sendAjax = function sendAjax() {
                         _this2.sendAjax(url);
+                        _this2.data.ajaxCountInAMinute = _this2.data.ajaxCountInAMinute + 1;
                     };
                     this.data.ajaxTimeout = setTimeout(sendAjax, 200);
                 }
@@ -32043,7 +32052,6 @@
                     _APP2.default.Utils.ajax({
                         url: url
                     }).done(function (response) {
-                        _this3.data.ajaxCountInAMinute = _this3.data.ajaxCountInAMinute + 1;
 
                         //Shows planets table and hides pre loader
                         _this3.setState({ planetsResponse: response, isValidating: false });
@@ -32143,9 +32151,9 @@
             value: true
         });
 
-        var _jquery = __webpack_require__(7);
+        var _jqueryMin = __webpack_require__(7);
 
-        var _jquery2 = _interopRequireDefault(_jquery);
+        var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
 
         var _react = __webpack_require__(0);
 
@@ -32358,9 +32366,9 @@
             value: true
         });
 
-        var _jquery = __webpack_require__(7);
+        var _jqueryMin = __webpack_require__(7);
 
-        var _jquery2 = _interopRequireDefault(_jquery);
+        var _jqueryMin2 = _interopRequireDefault(_jqueryMin);
 
         var _react = __webpack_require__(0);
 
