@@ -19,7 +19,8 @@ const Constants = {
     USERS: {        //Will be used to match for Luke.
         LUKE: 'Luke Skywalker'
     },
-    MAX_POPULATION: 1000000000000       //Max population. Population of Coruscant.
+    MAX_POPULATION: 1000000000000,       //Max population. Population of Coruscant.,
+    TERRAIN: 'terrain'
 };
 
 export default Constants;

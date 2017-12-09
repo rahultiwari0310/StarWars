@@ -43,6 +43,17 @@ class SearchTableComponent extends React.Component {
                 ocean: '#3376F1',
                 mountains: '#51260A'
             },
+            planetDetailLabelsMap: {        //Planet details labels map will be used for printing planets detail
+                name: 'Name',
+                population: 'Population',
+                terrain: 'Terrain',
+                surface_water: 'Surface Water',
+                gravity: 'Gravity',
+                diameter: 'Diameter',
+                climate: 'Climate',
+                orbital_period: 'Orbital Period',
+                created: 'Created'
+            },
             ajaxCountInAMinute: 0,                                      //Ajax count in a minute
             isLuke: APP.Constants.USERS.LUKE === props.loggedInUser     //Set to true if Luke. No max ajax limit for a minute.
         };
@@ -186,10 +197,11 @@ class SearchTableComponent extends React.Component {
         if ( this.state.selectedPlanet.name ) {
             return (
                 <PlanetDetailView
-                    { ...this.state.selectedPlanet }
+                    planetData={ this.state.selectedPlanet }
                     handlePlanetClick={ this.handlePlanetClick }
                     handleDetailBack={ this.handleDetailBack }
                     terrainColorMap = { this.data.terrainColorMap }
+                    planetDetailLabelsMap = { this.data.planetDetailLabelsMap }
                 />
             );
         } else if ( 0 < this.state.planetsResponse.results.length && this.state.searchInput  ) {        //If valid response present. Show planets search results.
