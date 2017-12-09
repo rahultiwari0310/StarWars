@@ -24,7 +24,7 @@ describe('SearchTableComponent', () => {
 
     });
 
-    it('Check maximum searches if not Luke.', () => {
+    it('Check maximum searches in a minute if not Luke.', () => {
         jest.useFakeTimers();
 
         const componentTree = shallow(
