@@ -1,0 +1,272 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardHead renders without error 1`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <DashboardHead
+    handleLogout={[Function]}
+    loggenInUser="Luke Skywalker"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "handleLogout": [Function],
+      "loggenInUser": "Luke Skywalker",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <h1
+        class="dashboard__head"
+      >
+        <span
+          class="dashboard__head__welcome"
+        >
+          Welcome to Star Wars planets Page.
+        </span>
+        <span
+          class="dashboard__head__greeting"
+        >
+           Hello 
+           ! 
+        </span>
+        <button
+          class="dashboard__head__logout"
+        >
+          Logout
+        </button>
+      </h1>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="dashboard__head__welcome"
+          >
+            Welcome to Star Wars planets Page.
+          </span>,
+          <span
+            className="dashboard__head__greeting"
+          >
+             Hello 
+             ! 
+          </span>,
+          <button
+            className="dashboard__head__logout"
+            onClick={[Function]}
+          >
+            Logout
+          </button>,
+        ],
+        "className": "dashboard__head",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <span
+            class="dashboard__head__welcome"
+          >
+            Welcome to Star Wars planets Page.
+          </span>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Welcome to Star Wars planets Page.",
+            "className": "dashboard__head__welcome",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Welcome to Star Wars planets Page.",
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": <span
+            class="dashboard__head__greeting"
+          >
+             Hello 
+             ! 
+          </span>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " Hello ",
+              undefined,
+              " ! ",
+            ],
+            "className": "dashboard__head__greeting",
+          },
+          "ref": null,
+          "rendered": Array [
+            " Hello ",
+            " ! ",
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": <button
+            class="dashboard__head__logout"
+          >
+            Logout
+          </button>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Logout",
+            "className": "dashboard__head__logout",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Logout",
+          ],
+          "type": "button",
+        },
+      ],
+      "type": "h1",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "handleLogout": [Function],
+        "loggenInUser": "Luke Skywalker",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <h1
+          class="dashboard__head"
+        >
+          <span
+            class="dashboard__head__welcome"
+          >
+            Welcome to Star Wars planets Page.
+          </span>
+          <span
+            class="dashboard__head__greeting"
+          >
+             Hello 
+             ! 
+          </span>
+          <button
+            class="dashboard__head__logout"
+          >
+            Logout
+          </button>
+        </h1>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="dashboard__head__welcome"
+            >
+              Welcome to Star Wars planets Page.
+            </span>,
+            <span
+              className="dashboard__head__greeting"
+            >
+               Hello 
+               ! 
+            </span>,
+            <button
+              className="dashboard__head__logout"
+              onClick={[Function]}
+            >
+              Logout
+            </button>,
+          ],
+          "className": "dashboard__head",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <span
+              class="dashboard__head__welcome"
+            >
+              Welcome to Star Wars planets Page.
+            </span>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Welcome to Star Wars planets Page.",
+              "className": "dashboard__head__welcome",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Welcome to Star Wars planets Page.",
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": <span
+              class="dashboard__head__greeting"
+            >
+               Hello 
+               ! 
+            </span>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                " Hello ",
+                undefined,
+                " ! ",
+              ],
+              "className": "dashboard__head__greeting",
+            },
+            "ref": null,
+            "rendered": Array [
+              " Hello ",
+              " ! ",
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": <button
+              class="dashboard__head__logout"
+            >
+              Logout
+            </button>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Logout",
+              "className": "dashboard__head__logout",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Logout",
+            ],
+            "type": "button",
+          },
+        ],
+        "type": "h1",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

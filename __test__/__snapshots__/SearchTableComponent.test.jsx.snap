@@ -1,0 +1,2259 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchTableComponent renders without error 1`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <SearchTableComponent />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": SearchTableComponent {
+      "_reactInternalFiber": FiberNode {
+        "_debugID": 4,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": FiberNode {
+          "_debugID": 3,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "alternate": null,
+          "child": [Circular],
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 1,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": [Circular],
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="search"
+                  >
+                    <div
+                      class="search__input__wrapper"
+                    >
+                      <input
+                        class="input"
+                        placeholder="search planet name"
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                    <p
+                      class="hide"
+                    >
+                       Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                    </p>
+                    <div
+                      class="search__content"
+                    >
+                      <p
+                        class="no-results"
+                      >
+                         
+                        Enter search term to view results.
+                         
+                      </p>
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "callbackList": null,
+                "expirationTime": 1,
+                "first": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                },
+                "hasForceUpdate": false,
+                "isInitialized": false,
+                "isProcessing": false,
+                "last": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                },
+              },
+            },
+            "child": [Circular],
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": [Circular],
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="search"
+                >
+                  <div
+                    class="search__input__wrapper"
+                  >
+                    <input
+                      class="input"
+                      placeholder="search planet name"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    class="hide"
+                  >
+                     Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                  </p>
+                  <div
+                    class="search__content"
+                  >
+                    <p
+                      class="no-results"
+                    >
+                       
+                      Enter search term to view results.
+                       
+                    </p>
+                  </div>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "finishedWork": null,
+              "hydrate": false,
+              "isReadyForCommit": false,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingContext": null,
+              "remainingExpirationTime": 0,
+            },
+            "tag": 3,
+            "type": null,
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_debugSource": null,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugID": 5,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 6,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 9,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "alternate": null,
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "className": "input",
+                "onChange": [Function],
+                "placeholder": "search planet name",
+                "type": "text",
+                "value": "",
+              },
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": <input
+                class="input"
+                placeholder="search planet name"
+                type="text"
+                value=""
+              />,
+              "tag": 5,
+              "type": "input",
+              "updateQueue": null,
+            },
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": <input
+                className="input"
+                onChange={[Function]}
+                placeholder="search planet name"
+                type="text"
+                value=""
+              />,
+              "className": "search__input__wrapper",
+            },
+            "memoizedState": null,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": [Circular],
+            "sibling": FiberNode {
+              "_debugID": 7,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "alternate": null,
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 1,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": " Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.",
+                "className": "hide",
+              },
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": [Circular],
+              "sibling": FiberNode {
+                "_debugID": 8,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 10,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 11,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": null,
+                    "_debugSource": null,
+                    "alternate": null,
+                    "child": null,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "internalContextTag": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": " ",
+                    "memoizedState": null,
+                    "nextEffect": null,
+                    "pendingProps": null,
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": FiberNode {
+                      "_debugID": 12,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": null,
+                      "_debugSource": null,
+                      "alternate": null,
+                      "child": null,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 1,
+                      "internalContextTag": 0,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": "Enter search term to view results.",
+                      "memoizedState": null,
+                      "nextEffect": null,
+                      "pendingProps": null,
+                      "ref": null,
+                      "return": [Circular],
+                      "sibling": FiberNode {
+                        "_debugID": 13,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": null,
+                        "_debugSource": null,
+                        "alternate": null,
+                        "child": null,
+                        "effectTag": 0,
+                        "expirationTime": 0,
+                        "firstEffect": null,
+                        "index": 2,
+                        "internalContextTag": 0,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": " ",
+                        "memoizedState": null,
+                        "nextEffect": null,
+                        "pendingProps": null,
+                        "ref": null,
+                        "return": [Circular],
+                        "sibling": null,
+                        "stateNode":  ,
+                        "tag": 6,
+                        "type": null,
+                        "updateQueue": null,
+                      },
+                      "stateNode": Enter search term to view results.,
+                      "tag": 6,
+                      "type": null,
+                      "updateQueue": null,
+                    },
+                    "stateNode":  ,
+                    "tag": 6,
+                    "type": null,
+                    "updateQueue": null,
+                  },
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "internalContextTag": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      " ",
+                      "Enter search term to view results.",
+                      " ",
+                    ],
+                    "className": "no-results",
+                  },
+                  "memoizedState": null,
+                  "nextEffect": null,
+                  "pendingProps": null,
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": null,
+                  "stateNode": <p
+                    class="no-results"
+                  >
+                     
+                    Enter search term to view results.
+                     
+                  </p>,
+                  "tag": 5,
+                  "type": "p",
+                  "updateQueue": null,
+                },
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 2,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <p
+                      className="no-results"
+                    >
+                       
+                      Enter search term to view results.
+                       
+                    </p>,
+                    null,
+                  ],
+                  "className": "search__content",
+                },
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": <div
+                  class="search__content"
+                >
+                  <p
+                    class="no-results"
+                  >
+                     
+                    Enter search term to view results.
+                     
+                  </p>
+                </div>,
+                "tag": 5,
+                "type": "div",
+                "updateQueue": null,
+              },
+              "stateNode": <p
+                class="hide"
+              >
+                 Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+              </p>,
+              "tag": 5,
+              "type": "p",
+              "updateQueue": null,
+            },
+            "stateNode": <div
+              class="search__input__wrapper"
+            >
+              <input
+                class="input"
+                placeholder="search planet name"
+                type="text"
+                value=""
+              />
+            </div>,
+            "tag": 5,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "effectTag": 0,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": Array [
+              <div
+                className="search__input__wrapper"
+              >
+                <input
+                  className="input"
+                  onChange={[Function]}
+                  placeholder="search planet name"
+                  type="text"
+                  value=""
+                />
+              </div>,
+              <p
+                className="hide"
+              >
+                 Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+              </p>,
+              <div
+                className="search__content"
+              >
+                <p
+                  className="no-results"
+                >
+                   
+                  Enter search term to view results.
+                   
+                </p>
+              </div>,
+            ],
+            "className": "search",
+          },
+          "memoizedState": null,
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": [Circular],
+          "sibling": null,
+          "stateNode": <div
+            class="search"
+          >
+            <div
+              class="search__input__wrapper"
+            >
+              <input
+                class="input"
+                placeholder="search planet name"
+                type="text"
+                value=""
+              />
+            </div>
+            <p
+              class="hide"
+            >
+               Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+            </p>
+            <div
+              class="search__content"
+            >
+              <p
+                class="no-results"
+              >
+                 
+                Enter search term to view results.
+                 
+              </p>
+            </div>
+          </div>,
+          "tag": 5,
+          "type": "div",
+          "updateQueue": null,
+        },
+        "effectTag": 1,
+        "expirationTime": 0,
+        "firstEffect": null,
+        "index": 0,
+        "internalContextTag": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {},
+        "memoizedState": Object {
+          "ajaxMaxed": false,
+          "isValidating": false,
+          "planetsResponse": Object {
+            "results": Array [],
+          },
+          "searchInput": "",
+          "selectedPlanet": Object {
+            "name": "",
+          },
+        },
+        "nextEffect": null,
+        "pendingProps": null,
+        "ref": null,
+        "return": FiberNode {
+          "_debugID": 3,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "alternate": null,
+          "child": [Circular],
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {},
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {},
+          },
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 1,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": [Circular],
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="search"
+                  >
+                    <div
+                      class="search__input__wrapper"
+                    >
+                      <input
+                        class="input"
+                        placeholder="search planet name"
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                    <p
+                      class="hide"
+                    >
+                       Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                    </p>
+                    <div
+                      class="search__content"
+                    >
+                      <p
+                        class="no-results"
+                      >
+                         
+                        Enter search term to view results.
+                         
+                      </p>
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "callbackList": null,
+                "expirationTime": 1,
+                "first": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                },
+                "hasForceUpdate": false,
+                "isInitialized": false,
+                "isProcessing": false,
+                "last": Object {
+                  "callback": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "nextCallback": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={Object {}}
+                    />,
+                  },
+                },
+              },
+            },
+            "child": [Circular],
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": [Circular],
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={Object {}}
+              />,
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="search"
+                >
+                  <div
+                    class="search__input__wrapper"
+                  >
+                    <input
+                      class="input"
+                      placeholder="search planet name"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                  <p
+                    class="hide"
+                  >
+                     Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                  </p>
+                  <div
+                    class="search__content"
+                  >
+                    <p
+                      class="no-results"
+                    >
+                       
+                      Enter search term to view results.
+                       
+                    </p>
+                  </div>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "finishedWork": null,
+              "hydrate": false,
+              "isReadyForCommit": false,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingContext": null,
+              "remainingExpirationTime": 0,
+            },
+            "tag": 3,
+            "type": null,
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "sibling": null,
+        "stateNode": [Circular],
+        "tag": 2,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "_reactInternalInstance": Object {},
+      "context": Object {},
+      "data": Object {
+        "ajaxCountInAMinute": 0,
+        "ajaxTimeout": 0,
+        "isLuke": false,
+        "planetDetailLabelsMap": Object {
+          "climate": "Climate",
+          "created": "Created",
+          "diameter": "Diameter",
+          "gravity": "Gravity",
+          "name": "Name",
+          "orbital_period": "Orbital Period",
+          "population": "Population",
+          "surface_water": "Surface Water",
+          "terrain": "Terrain",
+        },
+        "terrainColorMap": Object {
+          "cityscape": "#02223B",
+          "desert": "#FAC47A",
+          "forests": "#037230",
+          "grasslands": "#2C6805",
+          "jungle": "#035C0F",
+          "lakes": "#2B9BF3",
+          "mountains": "#51260A",
+          "ocean": "#3376F1",
+          "rainforests": "#03440C",
+          "rivers": "#5DA0B2",
+          "rock": "#0A131A",
+          "swamp": "#8E5B06",
+          "swamps": "#8E5B06",
+          "volcanoes": "#F98109",
+        },
+      },
+      "handleAjax": [Function],
+      "handleDetailBack": [Function],
+      "handlePlanetClick": [Function],
+      "handleSearchInputChange": [Function],
+      "props": Object {},
+      "refs": Object {},
+      "sendAjax": [Function],
+      "state": Object {
+        "ajaxMaxed": false,
+        "isValidating": false,
+        "planetsResponse": Object {
+          "results": Array [],
+        },
+        "searchInput": "",
+        "selectedPlanet": Object {
+          "name": "",
+        },
+      },
+      "updater": Object {
+        "enqueueForceUpdate": [Function],
+        "enqueueReplaceState": [Function],
+        "enqueueSetState": [Function],
+        "isMounted": [Function],
+      },
+    },
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {},
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="search"
+      >
+        <div
+          class="search__input__wrapper"
+        >
+          <input
+            class="input"
+            placeholder="search planet name"
+            type="text"
+            value=""
+          />
+        </div>
+        <p
+          class="hide"
+        >
+           Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+        </p>
+        <div
+          class="search__content"
+        >
+          <p
+            class="no-results"
+          >
+             
+            Enter search term to view results.
+             
+          </p>
+        </div>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="search__input__wrapper"
+          >
+            <input
+              className="input"
+              onChange={[Function]}
+              placeholder="search planet name"
+              type="text"
+              value=""
+            />
+          </div>,
+          <p
+            className="hide"
+          >
+             Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+          </p>,
+          <div
+            className="search__content"
+          >
+            <p
+              className="no-results"
+            >
+               
+              Enter search term to view results.
+               
+            </p>
+          </div>,
+        ],
+        "className": "search",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <div
+            class="search__input__wrapper"
+          >
+            <input
+              class="input"
+              placeholder="search planet name"
+              type="text"
+              value=""
+            />
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <input
+              className="input"
+              onChange={[Function]}
+              placeholder="search planet name"
+              type="text"
+              value=""
+            />,
+            "className": "search__input__wrapper",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <input
+                class="input"
+                placeholder="search planet name"
+                type="text"
+                value=""
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "input",
+                "onChange": [Function],
+                "placeholder": "search planet name",
+                "type": "text",
+                "value": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "input",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <p
+            class="hide"
+          >
+             Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+          </p>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.",
+            "className": "hide",
+          },
+          "ref": null,
+          "rendered": Array [
+            " Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": <div
+            class="search__content"
+          >
+            <p
+              class="no-results"
+            >
+               
+              Enter search term to view results.
+               
+            </p>
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="no-results"
+              >
+                 
+                Enter search term to view results.
+                 
+              </p>,
+              null,
+            ],
+            "className": "search__content",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <p
+                class="no-results"
+              >
+                 
+                Enter search term to view results.
+                 
+              </p>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  " ",
+                  "Enter search term to view results.",
+                  " ",
+                ],
+                "className": "no-results",
+              },
+              "ref": null,
+              "rendered": Array [
+                " ",
+                "Enter search term to view results.",
+                " ",
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": SearchTableComponent {
+        "_reactInternalFiber": FiberNode {
+          "_debugID": 4,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": FiberNode {
+            "_debugID": 3,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": [Circular],
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": FiberNode {
+                "_debugID": 1,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": [Circular],
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstEffect": null,
+                "index": 0,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="search"
+                    >
+                      <div
+                        class="search__input__wrapper"
+                      >
+                        <input
+                          class="input"
+                          placeholder="search planet name"
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                      <p
+                        class="hide"
+                      >
+                         Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                      </p>
+                      <div
+                        class="search__content"
+                      >
+                        <p
+                          class="no-results"
+                        >
+                           
+                          Enter search term to view results.
+                           
+                        </p>
+                      </div>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "finishedWork": null,
+                  "hydrate": false,
+                  "isReadyForCommit": false,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingContext": null,
+                  "remainingExpirationTime": 0,
+                },
+                "tag": 3,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "callbackList": null,
+                  "expirationTime": 1,
+                  "first": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                  },
+                  "hasForceUpdate": false,
+                  "isInitialized": false,
+                  "isProcessing": false,
+                  "last": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                  },
+                },
+              },
+              "child": [Circular],
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="search"
+                  >
+                    <div
+                      class="search__input__wrapper"
+                    >
+                      <input
+                        class="input"
+                        placeholder="search planet name"
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                    <p
+                      class="hide"
+                    >
+                       Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                    </p>
+                    <div
+                      class="search__content"
+                    >
+                      <p
+                        class="no-results"
+                      >
+                         
+                        Enter search term to view results.
+                         
+                      </p>
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": null,
+            },
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "_debugSource": null,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 5,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 6,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 9,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "className": "input",
+                  "onChange": [Function],
+                  "placeholder": "search planet name",
+                  "type": "text",
+                  "value": "",
+                },
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": <input
+                  class="input"
+                  placeholder="search planet name"
+                  type="text"
+                  value=""
+                />,
+                "tag": 5,
+                "type": "input",
+                "updateQueue": null,
+              },
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": <input
+                  className="input"
+                  onChange={[Function]}
+                  placeholder="search planet name"
+                  type="text"
+                  value=""
+                />,
+                "className": "search__input__wrapper",
+              },
+              "memoizedState": null,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": [Circular],
+              "sibling": FiberNode {
+                "_debugID": 7,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 1,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": " Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.",
+                  "className": "hide",
+                },
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": [Circular],
+                "sibling": FiberNode {
+                  "_debugID": 8,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "alternate": null,
+                  "child": FiberNode {
+                    "_debugID": 10,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "alternate": null,
+                    "child": FiberNode {
+                      "_debugID": 11,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": null,
+                      "_debugSource": null,
+                      "alternate": null,
+                      "child": null,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 0,
+                      "internalContextTag": 0,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": " ",
+                      "memoizedState": null,
+                      "nextEffect": null,
+                      "pendingProps": null,
+                      "ref": null,
+                      "return": [Circular],
+                      "sibling": FiberNode {
+                        "_debugID": 12,
+                        "_debugIsCurrentlyTiming": false,
+                        "_debugOwner": null,
+                        "_debugSource": null,
+                        "alternate": null,
+                        "child": null,
+                        "effectTag": 0,
+                        "expirationTime": 0,
+                        "firstEffect": null,
+                        "index": 1,
+                        "internalContextTag": 0,
+                        "key": null,
+                        "lastEffect": null,
+                        "memoizedProps": "Enter search term to view results.",
+                        "memoizedState": null,
+                        "nextEffect": null,
+                        "pendingProps": null,
+                        "ref": null,
+                        "return": [Circular],
+                        "sibling": FiberNode {
+                          "_debugID": 13,
+                          "_debugIsCurrentlyTiming": false,
+                          "_debugOwner": null,
+                          "_debugSource": null,
+                          "alternate": null,
+                          "child": null,
+                          "effectTag": 0,
+                          "expirationTime": 0,
+                          "firstEffect": null,
+                          "index": 2,
+                          "internalContextTag": 0,
+                          "key": null,
+                          "lastEffect": null,
+                          "memoizedProps": " ",
+                          "memoizedState": null,
+                          "nextEffect": null,
+                          "pendingProps": null,
+                          "ref": null,
+                          "return": [Circular],
+                          "sibling": null,
+                          "stateNode":  ,
+                          "tag": 6,
+                          "type": null,
+                          "updateQueue": null,
+                        },
+                        "stateNode": Enter search term to view results.,
+                        "tag": 6,
+                        "type": null,
+                        "updateQueue": null,
+                      },
+                      "stateNode":  ,
+                      "tag": 6,
+                      "type": null,
+                      "updateQueue": null,
+                    },
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 0,
+                    "internalContextTag": 0,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": Array [
+                        " ",
+                        "Enter search term to view results.",
+                        " ",
+                      ],
+                      "className": "no-results",
+                    },
+                    "memoizedState": null,
+                    "nextEffect": null,
+                    "pendingProps": null,
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": null,
+                    "stateNode": <p
+                      class="no-results"
+                    >
+                       
+                      Enter search term to view results.
+                       
+                    </p>,
+                    "tag": 5,
+                    "type": "p",
+                    "updateQueue": null,
+                  },
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 2,
+                  "internalContextTag": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": Array [
+                      <p
+                        className="no-results"
+                      >
+                         
+                        Enter search term to view results.
+                         
+                      </p>,
+                      null,
+                    ],
+                    "className": "search__content",
+                  },
+                  "memoizedState": null,
+                  "nextEffect": null,
+                  "pendingProps": null,
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": null,
+                  "stateNode": <div
+                    class="search__content"
+                  >
+                    <p
+                      class="no-results"
+                    >
+                       
+                      Enter search term to view results.
+                       
+                    </p>
+                  </div>,
+                  "tag": 5,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "stateNode": <p
+                  class="hide"
+                >
+                   Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                </p>,
+                "tag": 5,
+                "type": "p",
+                "updateQueue": null,
+              },
+              "stateNode": <div
+                class="search__input__wrapper"
+              >
+                <input
+                  class="input"
+                  placeholder="search planet name"
+                  type="text"
+                  value=""
+                />
+              </div>,
+              "tag": 5,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": Array [
+                <div
+                  className="search__input__wrapper"
+                >
+                  <input
+                    className="input"
+                    onChange={[Function]}
+                    placeholder="search planet name"
+                    type="text"
+                    value=""
+                  />
+                </div>,
+                <p
+                  className="hide"
+                >
+                   Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                </p>,
+                <div
+                  className="search__content"
+                >
+                  <p
+                    className="no-results"
+                  >
+                     
+                    Enter search term to view results.
+                     
+                  </p>
+                </div>,
+              ],
+              "className": "search",
+            },
+            "memoizedState": null,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": [Circular],
+            "sibling": null,
+            "stateNode": <div
+              class="search"
+            >
+              <div
+                class="search__input__wrapper"
+              >
+                <input
+                  class="input"
+                  placeholder="search planet name"
+                  type="text"
+                  value=""
+                />
+              </div>
+              <p
+                class="hide"
+              >
+                 Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+              </p>
+              <div
+                class="search__content"
+              >
+                <p
+                  class="no-results"
+                >
+                   
+                  Enter search term to view results.
+                   
+                </p>
+              </div>
+            </div>,
+            "tag": 5,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "internalContextTag": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {},
+          "memoizedState": Object {
+            "ajaxMaxed": false,
+            "isValidating": false,
+            "planetsResponse": Object {
+              "results": Array [],
+            },
+            "searchInput": "",
+            "selectedPlanet": Object {
+              "name": "",
+            },
+          },
+          "nextEffect": null,
+          "pendingProps": null,
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 3,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": [Circular],
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "internalContextTag": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {},
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {},
+            },
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": FiberNode {
+                "_debugID": 1,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": [Circular],
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstEffect": null,
+                "index": 0,
+                "internalContextTag": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="search"
+                    >
+                      <div
+                        class="search__input__wrapper"
+                      >
+                        <input
+                          class="input"
+                          placeholder="search planet name"
+                          type="text"
+                          value=""
+                        />
+                      </div>
+                      <p
+                        class="hide"
+                      >
+                         Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                      </p>
+                      <div
+                        class="search__content"
+                      >
+                        <p
+                          class="no-results"
+                        >
+                           
+                          Enter search term to view results.
+                           
+                        </p>
+                      </div>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "finishedWork": null,
+                  "hydrate": false,
+                  "isReadyForCommit": false,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingContext": null,
+                  "remainingExpirationTime": 0,
+                },
+                "tag": 3,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "callbackList": null,
+                  "expirationTime": 1,
+                  "first": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                  },
+                  "hasForceUpdate": false,
+                  "isInitialized": false,
+                  "isProcessing": false,
+                  "last": Object {
+                    "callback": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "nextCallback": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={Object {}}
+                      />,
+                    },
+                  },
+                },
+              },
+              "child": [Circular],
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "internalContextTag": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={Object {}}
+                />,
+              },
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="search"
+                  >
+                    <div
+                      class="search__input__wrapper"
+                    >
+                      <input
+                        class="input"
+                        placeholder="search planet name"
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                    <p
+                      class="hide"
+                    >
+                       Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+                    </p>
+                    <div
+                      class="search__content"
+                    >
+                      <p
+                        class="no-results"
+                      >
+                         
+                        Enter search term to view results.
+                         
+                      </p>
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "hydrate": false,
+                "isReadyForCommit": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": null,
+            },
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {},
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {},
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": [Circular],
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_reactInternalInstance": Object {},
+        "context": Object {},
+        "data": Object {
+          "ajaxCountInAMinute": 0,
+          "ajaxTimeout": 0,
+          "isLuke": false,
+          "planetDetailLabelsMap": Object {
+            "climate": "Climate",
+            "created": "Created",
+            "diameter": "Diameter",
+            "gravity": "Gravity",
+            "name": "Name",
+            "orbital_period": "Orbital Period",
+            "population": "Population",
+            "surface_water": "Surface Water",
+            "terrain": "Terrain",
+          },
+          "terrainColorMap": Object {
+            "cityscape": "#02223B",
+            "desert": "#FAC47A",
+            "forests": "#037230",
+            "grasslands": "#2C6805",
+            "jungle": "#035C0F",
+            "lakes": "#2B9BF3",
+            "mountains": "#51260A",
+            "ocean": "#3376F1",
+            "rainforests": "#03440C",
+            "rivers": "#5DA0B2",
+            "rock": "#0A131A",
+            "swamp": "#8E5B06",
+            "swamps": "#8E5B06",
+            "volcanoes": "#F98109",
+          },
+        },
+        "handleAjax": [Function],
+        "handleDetailBack": [Function],
+        "handlePlanetClick": [Function],
+        "handleSearchInputChange": [Function],
+        "props": Object {},
+        "refs": Object {},
+        "sendAjax": [Function],
+        "state": Object {
+          "ajaxMaxed": false,
+          "isValidating": false,
+          "planetsResponse": Object {
+            "results": Array [],
+          },
+          "searchInput": "",
+          "selectedPlanet": Object {
+            "name": "",
+          },
+        },
+        "updater": Object {
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+        },
+      },
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {},
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="search"
+        >
+          <div
+            class="search__input__wrapper"
+          >
+            <input
+              class="input"
+              placeholder="search planet name"
+              type="text"
+              value=""
+            />
+          </div>
+          <p
+            class="hide"
+          >
+             Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+          </p>
+          <div
+            class="search__content"
+          >
+            <p
+              class="no-results"
+            >
+               
+              Enter search term to view results.
+               
+            </p>
+          </div>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="search__input__wrapper"
+            >
+              <input
+                className="input"
+                onChange={[Function]}
+                placeholder="search planet name"
+                type="text"
+                value=""
+              />
+            </div>,
+            <p
+              className="hide"
+            >
+               Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+            </p>,
+            <div
+              className="search__content"
+            >
+              <p
+                className="no-results"
+              >
+                 
+                Enter search term to view results.
+                 
+              </p>
+            </div>,
+          ],
+          "className": "search",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <div
+              class="search__input__wrapper"
+            >
+              <input
+                class="input"
+                placeholder="search planet name"
+                type="text"
+                value=""
+              />
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <input
+                className="input"
+                onChange={[Function]}
+                placeholder="search planet name"
+                type="text"
+                value=""
+              />,
+              "className": "search__input__wrapper",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <input
+                  class="input"
+                  placeholder="search planet name"
+                  type="text"
+                  value=""
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "input",
+                  "onChange": [Function],
+                  "placeholder": "search planet name",
+                  "type": "text",
+                  "value": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "input",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <p
+              class="hide"
+            >
+               Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.
+            </p>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.",
+              "className": "hide",
+            },
+            "ref": null,
+            "rendered": Array [
+              " Only luke is allowed to make more than 15 searches in a minute. Try searching after a few seconds.",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": <div
+              class="search__content"
+            >
+              <p
+                class="no-results"
+              >
+                 
+                Enter search term to view results.
+                 
+              </p>
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <p
+                  className="no-results"
+                >
+                   
+                  Enter search term to view results.
+                   
+                </p>,
+                null,
+              ],
+              "className": "search__content",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <p
+                  class="no-results"
+                >
+                   
+                  Enter search term to view results.
+                   
+                </p>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    " ",
+                    "Enter search term to view results.",
+                    " ",
+                  ],
+                  "className": "no-results",
+                },
+                "ref": null,
+                "rendered": Array [
+                  " ",
+                  "Enter search term to view results.",
+                  " ",
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
