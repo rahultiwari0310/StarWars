@@ -49,7 +49,9 @@ class SearchTableComponent extends React.Component {
         this.performScopeBindings();
 
         //Sets interval to reset ajax count after a minute.
-        this.setIntervalForLuke();
+        if( ! this.data.isLuke ) {
+            this.setIntervalForLuke();
+        }
 
      }
 
@@ -144,6 +146,7 @@ class SearchTableComponent extends React.Component {
 
         const sendAjax = () => {
             this.sendAjax( url );
+            this.data.ajaxCountInAMinute = this.data.ajaxCountInAMinute + 1;
         };
         this.data.ajaxTimeout = setTimeout( sendAjax, 200 );
     }
@@ -166,7 +169,6 @@ class SearchTableComponent extends React.Component {
             }
         ).done(
             ( response ) => {
-                this.data.ajaxCountInAMinute = this.data.ajaxCountInAMinute + 1;
 
                 //Shows planets table and hides pre loader
                 this.setState( { planetsResponse: response, isValidating: false } );

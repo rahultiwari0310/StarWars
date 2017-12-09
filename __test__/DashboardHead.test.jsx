@@ -2,7 +2,7 @@ import 'raf/polyfill';      // Warning: React depends on requestAnimationFrame. 
 import React from 'react';
 import ReactDOM from 'react-dom';
 import sinon from 'sinon';
-import Login from '../js/components/Login.jsx';
+import DashboardHead from '../js/views/DashboardHead.jsx';
 import Enzyme, { shallow, mount, render } from 'enzyme';
 /*
     Fix for Enzyme Internal Error: Enzyme expects an adapter to be configured, but found none. To
@@ -14,26 +14,27 @@ import Adapter from 'enzyme-adapter-react-16';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-describe('Login', () => {
+describe('DashboardHead', () => {
     it('renders without error', () => {
         const componentTree = mount(
-            <Login/>
+            <DashboardHead loggenInUser='Luke Skywalker' handleLogout={ ()=>{} }/>
         );
-        expect( componentTree.length ).toEqual( 1 );
-        expect( componentTree ).toMatchSnapshot();
-
+        expect(componentTree.length).toEqual(1);
+        expect(componentTree).toMatchSnapshot();
     });
 
-    it('rendered elements correctly', () => {
-        const componentTree = shallow(
-            <Login/>
+    it('handles logout click correctly', () => {
+        const handleLogout = jest.fn(),
+            luke = 'Luke Skywalker';
+        const componentTree = mount(
+            <DashboardHead loggedInUser={ luke } handleLogout={ handleLogout }/>
         );
+        componentTree.find( '.dashboard__head__logout' ).simulate( 'click' );
+        expect( handleLogout).toHaveBeenCalled();
 
-        expect( componentTree.find( '#username' ).length ).toEqual( 1 );
-        expect( componentTree.find( '#password' ).length ).toEqual( 1 );
-        expect(componentTree.find('.form__button').length ).toEqual( 1 );
-        expect(componentTree.find( '.error' ).hasClass( 'hide' ) ).toEqual( true );
-        expect( componentTree.state( [ 'isDirty' ] ) ).toEqual( false );
+        //Check if greeting is correctly rendered
+        expect( componentTree.find( '.dashboard__head__greeting' ).text()).toEqual( ' Hello ' + luke + ' ! ' );
+
     });
 
 });
