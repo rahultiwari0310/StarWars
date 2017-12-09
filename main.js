@@ -60,7 +60,7 @@
     /******/ 	__webpack_require__.p = "";
     /******/
     /******/ 	// __webpack_hash__
-    /******/ 	__webpack_require__.h = "41c07879d770dccac354";
+    /******/ 	__webpack_require__.h = "73c76f818626049a8351";
     /******/
     /******/ 	// __webpack_chunkname__
     /******/ 	__webpack_require__.cn = "main";
@@ -443,48 +443,6 @@
         "use strict";
 
 
-        /**
-         * Copyright (c) 2013-present, Facebook, Inc.
-         *
-         * This source code is licensed under the MIT license found in the
-         * LICENSE file in the root directory of this source tree.
-         *
-         *
-         */
-
-        function makeEmptyFunction(arg) {
-            return function () {
-                return arg;
-            };
-        }
-
-        /**
-         * This function accepts and discards inputs; it has no side effects. This is
-         * primarily useful idiomatically for overridable function endpoints which
-         * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
-         */
-        var emptyFunction = function emptyFunction() {};
-
-        emptyFunction.thatReturns = makeEmptyFunction;
-        emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
-        emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
-        emptyFunction.thatReturnsNull = makeEmptyFunction(null);
-        emptyFunction.thatReturnsThis = function () {
-            return this;
-        };
-        emptyFunction.thatReturnsArgument = function (arg) {
-            return arg;
-        };
-
-        module.exports = emptyFunction;
-
-        /***/ }),
-    /* 6 */
-    /***/ (function(module, exports, __webpack_require__) {
-
-        "use strict";
-
-
         Object.defineProperty(exports, "__esModule", {
             value: true
         });
@@ -524,6 +482,48 @@
         (0, _jqueryMin2.default)(document).ready(init);
 
         exports.default = APP;
+
+        /***/ }),
+    /* 6 */
+    /***/ (function(module, exports, __webpack_require__) {
+
+        "use strict";
+
+
+        /**
+         * Copyright (c) 2013-present, Facebook, Inc.
+         *
+         * This source code is licensed under the MIT license found in the
+         * LICENSE file in the root directory of this source tree.
+         *
+         *
+         */
+
+        function makeEmptyFunction(arg) {
+            return function () {
+                return arg;
+            };
+        }
+
+        /**
+         * This function accepts and discards inputs; it has no side effects. This is
+         * primarily useful idiomatically for overridable function endpoints which
+         * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+         */
+        var emptyFunction = function emptyFunction() {};
+
+        emptyFunction.thatReturns = makeEmptyFunction;
+        emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+        emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+        emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+        emptyFunction.thatReturnsThis = function () {
+            return this;
+        };
+        emptyFunction.thatReturnsArgument = function (arg) {
+            return arg;
+        };
+
+        module.exports = emptyFunction;
 
         /***/ }),
     /* 7 */
@@ -3149,7 +3149,7 @@
 
 
 
-        var emptyFunction = __webpack_require__(5);
+        var emptyFunction = __webpack_require__(6);
 
             /**
              * Similar to invariant but only logs a warning if the condition is not met.
@@ -4114,7 +4114,8 @@
             USERS: { //Will be used to match for Luke.
                 LUKE: 'Luke Skywalker'
             },
-            MAX_POPULATION: 1000000000000 //Max population. Population of Coruscant.
+            MAX_POPULATION: 1000000000000, //Max population. Population of Coruscant.,
+            TERRAIN: 'terrain'
         };
 
         exports.default = Constants;
@@ -4174,7 +4175,7 @@
              * @typechecks
              */
 
-            var emptyFunction = __webpack_require__(5);
+            var emptyFunction = __webpack_require__(6);
 
             /**
              * Upstream version of event listener. Does not take into account specific
@@ -4438,7 +4439,7 @@
 
         var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-        var _APP = __webpack_require__(6);
+        var _APP = __webpack_require__(5);
 
         var _APP2 = _interopRequireDefault(_APP);
 
@@ -14212,7 +14213,7 @@
         "use strict";
 
 
-        var _APP = __webpack_require__(6);
+        var _APP = __webpack_require__(5);
 
         var _APP2 = _interopRequireDefault(_APP);
 
@@ -14297,7 +14298,7 @@
             value: true
         });
 
-        var _APP = __webpack_require__(6);
+        var _APP = __webpack_require__(5);
 
         var _APP2 = _interopRequireDefault(_APP);
 
@@ -14375,7 +14376,7 @@
          * LICENSE file in the root directory of this source tree.
          */
 
-        var m=__webpack_require__(8),n=__webpack_require__(12),p=__webpack_require__(5),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+        var m=__webpack_require__(8),n=__webpack_require__(12),p=__webpack_require__(6),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
         function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
         var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
         function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -14415,7 +14416,7 @@
                     var emptyObject = __webpack_require__(12);
                     var invariant = __webpack_require__(9);
                     var warning = __webpack_require__(13);
-                    var emptyFunction = __webpack_require__(5);
+                    var emptyFunction = __webpack_require__(6);
                     var checkPropTypes = __webpack_require__(15);
 
 // TODO: this is special because it gets imported during build.
@@ -15817,7 +15818,7 @@
         /*
          Modernizr 3.0.0pre (Custom Build) | MIT
          */
-        var aa=__webpack_require__(0),l=__webpack_require__(27),B=__webpack_require__(8),C=__webpack_require__(5),ba=__webpack_require__(28),da=__webpack_require__(29),ea=__webpack_require__(30),fa=__webpack_require__(31),ia=__webpack_require__(32),D=__webpack_require__(12);
+        var aa=__webpack_require__(0),l=__webpack_require__(27),B=__webpack_require__(8),C=__webpack_require__(6),ba=__webpack_require__(28),da=__webpack_require__(29),ea=__webpack_require__(30),fa=__webpack_require__(31),ia=__webpack_require__(32),D=__webpack_require__(12);
         function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
         var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
         var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -16119,7 +16120,7 @@
                     var warning = __webpack_require__(13);
                     var ExecutionEnvironment = __webpack_require__(27);
                     var _assign = __webpack_require__(8);
-                    var emptyFunction = __webpack_require__(5);
+                    var emptyFunction = __webpack_require__(6);
                     var EventListener = __webpack_require__(28);
                     var getActiveElement = __webpack_require__(29);
                     var shallowEqual = __webpack_require__(30);
@@ -31663,7 +31664,7 @@
 
         var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-        var _APP = __webpack_require__(6);
+        var _APP = __webpack_require__(5);
 
         var _APP2 = _interopRequireDefault(_APP);
 
@@ -31822,11 +31823,9 @@
             value: true
         });
 
-        var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
         var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-        var _APP = __webpack_require__(6);
+        var _APP = __webpack_require__(5);
 
         var _APP2 = _interopRequireDefault(_APP);
 
@@ -31897,6 +31896,17 @@
                         volcanoes: '#F98109',
                         ocean: '#3376F1',
                         mountains: '#51260A'
+                    },
+                    planetDetailLabelsMap: { //Planet details labels map will be used for printing planets detail
+                        name: 'Name',
+                        population: 'Population',
+                        terrain: 'Terrain',
+                        surface_water: 'Surface Water',
+                        gravity: 'Gravity',
+                        diameter: 'Diameter',
+                        climate: 'Climate',
+                        orbital_period: 'Orbital Period',
+                        created: 'Created'
                     },
                     ajaxCountInAMinute: 0, //Ajax count in a minute
                     isLuke: _APP2.default.Constants.USERS.LUKE === props.loggedInUser //Set to true if Luke. No max ajax limit for a minute.
@@ -32069,11 +32079,13 @@
 
                     //If selected plant view present then detail view of planet returned.
                     if (this.state.selectedPlanet.name) {
-                        return _react2.default.createElement(_PlanetDetailView2.default, _extends({}, this.state.selectedPlanet, {
+                        return _react2.default.createElement(_PlanetDetailView2.default, {
+                            planetData: this.state.selectedPlanet,
                             handlePlanetClick: this.handlePlanetClick,
                             handleDetailBack: this.handleDetailBack,
-                            terrainColorMap: this.data.terrainColorMap
-                        }));
+                            terrainColorMap: this.data.terrainColorMap,
+                            planetDetailLabelsMap: this.data.planetDetailLabelsMap
+                        });
                     } else if (0 < this.state.planetsResponse.results.length && this.state.searchInput) {
                         //If valid response present. Show planets search results.
                         return _react2.default.createElement(_SearchTableView2.default, {
@@ -32159,7 +32171,7 @@
 
         var _react2 = _interopRequireDefault(_react);
 
-        var _APP = __webpack_require__(6);
+        var _APP = __webpack_require__(5);
 
         var _APP2 = _interopRequireDefault(_APP);
 
@@ -32374,7 +32386,60 @@
 
         var _react2 = _interopRequireDefault(_react);
 
+        var _APP = __webpack_require__(5);
+
+        var _APP2 = _interopRequireDefault(_APP);
+
         function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//const PlanetDetailView = ( props ) => {
+//
+//    return (
+//        <div className='planet'>
+//            <button className='planet__back search-results__button' onClick={ props.handleDetailBack }>&larr; Back</button>
+//            <p className='search__legend'> 1. { printLegends( props.terrainColorMap ) }</p>
+//            <div className='planet__detail'>
+//                <div className='planet__detail__item'>
+//                    <span className='planet__detail__item__label'> Name: </span>
+//                    <span className='planet__detail__item__value'> { props.name } </span>
+//                </div>
+//                <div className='planet__detail__item'>
+//                    <span className='planet__detail__item__label'> Population: </span>
+//                    <span className='planet__detail__item__value'> { props.population } </span>
+//                </div>
+//                <div className='planet__detail__item'>
+//                    <span className='planet__detail__item__label'> Terrain: </span>
+//                    <span className='planet__detail__item__value'> { props.terrain } { getTerrainViews( props.terrain, props.terrainColorMap ) } </span>
+//                </div>
+//                <div className='planet__detail__item'>
+//                    <span className='planet__detail__item__label'> Surface Water: </span>
+//                    <span className='planet__detail__item__value'> { props.surface_water } </span>
+//                </div>
+//                <div className='planet__detail__item'>
+//                    <span className='planet__detail__item__label'> Gravity: </span>
+//                    <span className='planet__detail__item__value'> { props.gravity } </span>
+//                </div>
+//                <div className='planet__detail__item'>
+//                    <span className='planet__detail__item__label'> Diameter: </span>
+//                    <span className='planet__detail__item__value'> { props.diameter } </span>
+//                </div>
+//                <div className='planet__detail__item'>
+//                    <span className='planet__detail__item__label'> Climate: </span>
+//                    <span className='planet__detail__item__value'> { props.climate } </span>
+//                </div>
+//                <div className='planet__detail__item'>
+//                    <span className='planet__detail__item__label'> Orbital Period: </span>
+//                    <span className='planet__detail__item__value'> { props.orbital_period } </span>
+//                </div>
+//                <div className='planet__detail__item'>
+//                    <span className='planet__detail__item__label'> Created: </span>
+//                    <span className='planet__detail__item__value'> { props.created } </span>
+//                </div>
+//            </div>
+//        </div>
+//    );
+//
+//};
 
         var PlanetDetailView = function PlanetDetailView(props) {
 
@@ -32395,152 +32460,46 @@
                 _react2.default.createElement(
                     'div',
                     { className: 'planet__detail' },
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'planet__detail__item' },
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__label' },
-                            ' Name: '
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__value' },
-                            ' ',
-                            props.name,
-                            ' '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'planet__detail__item' },
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__label' },
-                            ' Population: '
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__value' },
-                            ' ',
-                            props.population,
-                            ' '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'planet__detail__item' },
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__label' },
-                            ' Terrain: '
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__value' },
-                            ' ',
-                            props.terrain,
-                            ' ',
-                            getTerrainViews(props.terrain, props.terrainColorMap),
-                            ' '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'planet__detail__item' },
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__label' },
-                            ' Surface Water: '
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__value' },
-                            ' ',
-                            props.surface_water,
-                            ' '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'planet__detail__item' },
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__label' },
-                            ' Gravity: '
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__value' },
-                            ' ',
-                            props.gravity,
-                            ' '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'planet__detail__item' },
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__label' },
-                            ' Diameter: '
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__value' },
-                            ' ',
-                            props.diameter,
-                            ' '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'planet__detail__item' },
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__label' },
-                            ' Climate: '
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__value' },
-                            ' ',
-                            props.climate,
-                            ' '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'planet__detail__item' },
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__label' },
-                            ' Orbital Period: '
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__value' },
-                            ' ',
-                            props.orbital_period,
-                            ' '
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'div',
-                        { className: 'planet__detail__item' },
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__label' },
-                            ' Created: '
-                        ),
-                        _react2.default.createElement(
-                            'span',
-                            { className: 'planet__detail__item__value' },
-                            ' ',
-                            props.created,
-                            ' '
-                        )
-                    )
+                    getPlanetDetailRows(props)
+                )
+            );
+        };
+
+        var getPlanetDetailRows = function getPlanetDetailRows(props) {
+            var result = [];
+
+            for (var key in props.planetData) {
+                var itemValue = props.planetData[key],
+                    rowLabel = props.planetDetailLabelsMap[key];
+                if (!_APP2.default.Utils.isUndefined(rowLabel) && _APP2.default.Constants.TERRAIN !== key) {
+                    result.push(getPlanetRowItem({ label: rowLabel, value: itemValue }));
+                } else if (_APP2.default.Constants.TERRAIN === key) {
+                    var terrainView = [];
+                    terrainView.push(itemValue, getTerrainViews(itemValue, props.terrainColorMap));
+                    result.push(getPlanetRowItem({ label: rowLabel, value: terrainView }));
+                }
+            }
+
+            return result;
+        };
+
+        var getPlanetRowItem = function getPlanetRowItem(props) {
+            return _react2.default.createElement(
+                'div',
+                { className: 'planet__detail__item', key: props.label },
+                _react2.default.createElement(
+                    'span',
+                    { className: 'planet__detail__item__label' },
+                    ' ',
+                    props.label,
+                    ': '
+                ),
+                _react2.default.createElement(
+                    'span',
+                    { className: 'planet__detail__item__value' },
+                    ' ',
+                    props.value,
+                    ' '
                 )
             );
         };
@@ -32593,7 +32552,7 @@
 
         var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-        var _APP = __webpack_require__(6);
+        var _APP = __webpack_require__(5);
 
         var _APP2 = _interopRequireDefault(_APP);
 
@@ -32767,7 +32726,7 @@
 
 
 
-        var emptyFunction = __webpack_require__(5);
+        var emptyFunction = __webpack_require__(6);
             var invariant = __webpack_require__(9);
             var warning = __webpack_require__(13);
             var assign = __webpack_require__(8);
@@ -33317,7 +33276,7 @@
 
 
 
-        var emptyFunction = __webpack_require__(5);
+        var emptyFunction = __webpack_require__(6);
         var invariant = __webpack_require__(9);
         var ReactPropTypesSecret = __webpack_require__(16);
 
